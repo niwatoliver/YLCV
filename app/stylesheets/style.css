@@ -7,9 +7,22 @@ body {
     font-family: "YouTube Noto", Roboto, arial, sans-serif;
     color: #000;
 }
+#setting-menu {
+    width: 200px;
+    height: 100vh;
+    float: right;
+    display: none;
+    overflow-y: scroll;
+}
 
 #wv {
+    width: 100%;
     height: 100vh;
+    float: left;
+}
+
+#wv-wrap {
+    position: relative;
 }
 
 #setting-wrap {
@@ -26,8 +39,58 @@ body {
     width: 24px;
     height: 24px;
     fill: rgb(0, 0, 0);
+    display: none;
 }
 
-body:hover #setting-wrap {
+body:hover #setting-wrap, .setting-icon{
     display: block;
+}
+#connect-wrap {
+    text-align: center;
+    margin: 24px 0;
+}
+#connect-wrap input{
+    width: 90%;
+    margin: 16px 0;
+}
+#connect-wrap button{
+    width: 90%;
+    padding: 4%;
+}
+
+#css-adapt-wrap {
+    text-align: center;
+    margin: 24px 0;
+}
+#css-adapt-wrap textarea{
+    width: 90%;
+    height: 100px;
+    margin: 16px 0;
+}
+#css-adapt-wrap button{
+    width: 90%;
+    padding: 4%;
+}
+
+#background-wrap {
+    text-align: center;
+    margin: 24px 0;
+}
+
+#background-wrap input{
+    width: 90%;
+    margin: 16px 0;
+}
+#background-wrap button{
+    width: 90%;
+    padding: 4%;
+}
+
+#desc .url{
+    font-size: 10px;
+}
+
+#desc p{
+    text-align: center;
+    margin: 20px 0;
 }

@@ -2,24 +2,59 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>コメビュ</title>
+  <title>YouTube Live コメントビュアー</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
-<webview
-  id="wv"
-  src="https://www.youtube.com/live_chat?is_popout=1&v=kUMFKbB6hZ8">
-</webview>
-<div id="setting-wrap">
-  <svg class="setting-icon" id="setting">
-    <use xlink:href="icon/setting.svg#icon"></use>
-  </svg>
-  <div id="setting-menu"></div>
+<div id="main-wrap">
+  <div id="wv-wrap">
+    <webview
+      id="wv"
+      src="https://www.youtube.com/live_chat?v=">
+    </webview>
+    <div id="setting-wrap">
+      <svg class="setting-icon" id="setting">
+        <use xlink:href="icon/setting.svg#icon"></use>
+      </svg>
+    </div>
+  </div>
+  <div id="setting-menu">
+    <div id="connect-wrap">
+      <label>
+        <span>チャットURL</span>
+        <input id="connect-input"/>
+        <button id="connect-button">接続</button>
+      </label>
+    </div>
+    <div id="css-adapt-wrap">
+      <label>
+        <span>CSS</span>
+        <textarea id="css-textarea"></textarea>
+        <button id="css-button">適用</button>
+      </label>
+    </div>
+    <div id="background-wrap">
+      <label>
+        <span>背景色</span>
+        <input id="background-input" />
+        <button id="background-button">適用</button>
+      </label>
+    </div>
+    <div id="desc">
+      <p>Example</p>
+      <p>チャットURL</p>
+      <p class="url">https://www.youtube.com/live_chat?v=???</p>
+      <p>CSS</p>
+      <p class="url">https://chatv2.septapus.com</p>
+      <p>背景色</p>
+      <p>#C1C1C1</p>
+    </div>
+  </div>
 </div>
 <script>
-  require('babel-register')();
-  require('./scripts/app');
-//  require('./build/bundle');
+//  require('babel-register')();
+//  require('./scripts/app');
+  require('./build/bundle');
 </script>
 </body>
 </html>

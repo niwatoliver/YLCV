@@ -1,9 +1,30 @@
 {
-  "name": "youtube-comment-viewer",
-  "version": "0.0.0",
+  "name": "YLCV",
+  "version": "0.1.0",
+  "description": "Youtube Live Comment Viewer",
+  "keywords": [
+    "Electron",
+    "YouTube",
+    "YouTube Live"
+  ],
+  "homepage": "https://github.com/minakawa-daiki/YLCV#readme",
+  "bugs": {
+    "url": "https://github.com/minakawa-daiki/YLCV/issues",
+    "email" : "minakawa.daiki.as@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name":"Oliver",
+    "url":"https://github.com/minakawa-daiki",
+    "mail":"minakawa.daiki.as@gmail.com"
+  },
   "private": true,
   "scripts": {
-    "start": "$(npm bin)/electron ."
+    "start": "$(npm bin)/electron .",
+    "build": "$(npm bin)/webpack --progress",
+    "package:mac": "$(npm bin)/electron-packager --package-manager yarn . YLCV --out=build --platform darwin --arch x64 --icon=icons/icon.icns --overwrite --electronVersion=1.7.9",
+    "package:win": "$(npm bin)/electron-packager --package-manager yarn . YLCV --out=build --platform win32 --arch x64 --icon=icons/icon.ico --overwrite --electronVersion=1.7.9",
+    "package:linux": "$(npm bin)/electron-packager --package-manager yarn . YLCV --out=build --platform linux --arch x64 --icon=icons/icon.icos --overwrite --electronVersion=1.7.9"
   },
   "main": "main.js",
   "dependencies": {},
@@ -13,12 +34,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
     "electron": "1.7.9",
     "electron-packager": "^9.1.0",
     "react": "^16.1.1",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.1.1",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "babel-register": "^6.26.0"
   }
 }
