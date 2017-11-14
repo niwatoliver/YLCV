@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>コメビュ</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+<webview
+  id="wv"
+  src="https://www.youtube.com/live_chat?is_popout=1&v=kUMFKbB6hZ8">
+</webview>
+<div id="setting-wrap">
+  <svg class="setting-icon" id="setting">
+    <use xlink:href="icon/setting.svg#icon"></use>
+  </svg>
+  <div id="setting-menu"></div>
+</div>
+<script>
+  require('babel-register')();
+  require('./scripts/app');
+//  require('./build/bundle');
+</script>
+</body>
+</html>

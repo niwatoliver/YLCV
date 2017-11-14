@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "YouTube Noto", Roboto, arial, sans-serif;
+    color: #000;
+}
+
+#wv {
+    height: 100vh;
+}
+
+#setting-wrap {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: none;
+}
+
+.setting-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    fill: rgb(0, 0, 0);
+}
+
+body:hover #setting-wrap {
+    display: block;
+}
