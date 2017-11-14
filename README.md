@@ -15,7 +15,7 @@ WebViewにより、直接Youtubeのコメントページを表示しているた
     アプリケーションにマウスカーソルを乗っけると右上に歯車アイコンが出るのでそこをクリックしてください。
 
   - チャットに接続  
-    「https://www.youtube.com/live_chat?v=???」の形式で入力してください。
+    「[https://www.youtube.com/live_chat?v=???](https://www.youtube.com/live_chat?v=???)」の形式で入力してください。
     
   - CSSの変更  
     「[https://chatv2.septapus.com](https://chatv2.septapus.com)」を利用するとCSSを簡単に変更できます。
